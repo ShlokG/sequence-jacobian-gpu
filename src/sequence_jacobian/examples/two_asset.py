@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 
 from sequence_jacobian import simple, solved, combine, create_model, grids, hetblocks
 hh = hetblocks.hh_twoasset.hh

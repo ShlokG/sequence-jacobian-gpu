@@ -1,6 +1,6 @@
 '''Standard Incomplete Market model'''
 
-import numpy as np
+import cupy as np
 
 from ..blocks.het_block import het
 from .. import interpolate, misc, grids

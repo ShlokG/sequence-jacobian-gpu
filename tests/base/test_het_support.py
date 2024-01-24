@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 from sequence_jacobian.blocks.support.het_support import (Transition,
     PolicyLottery1D, PolicyLottery2D, Markov, CombinedTransition,
     lottery_1d, lottery_2d)

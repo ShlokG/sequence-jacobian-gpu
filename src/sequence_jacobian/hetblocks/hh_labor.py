@@ -1,6 +1,6 @@
 '''Standard Incomplete Market model with Endogenous Labor Supply'''
 
-import numpy as np
+import cupy as np
 from numba import vectorize, njit
 
 from ..blocks.het_block import het

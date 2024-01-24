@@ -1,6 +1,6 @@
 """Test public-facing classes"""
 
-import numpy as np
+import cupy as np
 import pytest
 
 from sequence_jacobian import het

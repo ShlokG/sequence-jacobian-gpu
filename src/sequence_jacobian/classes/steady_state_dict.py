@@ -5,7 +5,7 @@ from ..utilities.misc import dict_diff
 from ..utilities.ordered_set import OrderedSet
 from ..utilities.bijection import Bijection
 
-import numpy as np
+import cupy as np
 
 from numbers import Real
 from typing import Any, Dict, Union

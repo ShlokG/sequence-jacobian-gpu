@@ -1,6 +1,6 @@
 import re
 import inspect
-import numpy as np
+import cupy as np
 
 from .ordered_set import OrderedSet
 from . import graph

@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 from sequence_jacobian import simple, solved, create_model, markov_rouwenhorst, agrid 
 from sequence_jacobian.classes.impulse_dict import ImpulseDict
 from sequence_jacobian.hetblocks.hh_sim import hh

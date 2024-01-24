@@ -1,7 +1,7 @@
 """Test all models' estimation calculations"""
 ''
 import pytest
-import numpy as np
+import cupy as np
 
 from sequence_jacobian import estimation
 

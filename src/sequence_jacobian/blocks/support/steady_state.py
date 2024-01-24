@@ -1,7 +1,7 @@
 """Various lower-level functions to support the computation of steady states"""
 
 import warnings
-import numpy as np
+import cupy as np
 import scipy.optimize as opt
 from numbers import Real
 from functools import partial

@@ -149,7 +149,7 @@ class Block:
 
         ss =  SteadyStateDict(calibration)
 
-        solver = options['solver'] if options['solver'] else provide_solver_default(unknowns)
+        solver = "broyden_custom"#options['solver'] if options['solver'] else provide_solver_default(unknowns)
 
         def residual(unknown_values, unknowns_keys=unknowns.keys(), targets=targets):
             ss.update(misc.smart_zip(unknowns_keys, unknown_values))

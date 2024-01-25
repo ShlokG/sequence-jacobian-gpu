@@ -26,14 +26,14 @@ def instantiate_steady_state_mutable_kwargs(dissolve, block_kwargs, solver_kwarg
 def provide_solver_default(unknowns):
     if len(unknowns) == 1:
         bounds = list(unknowns.values())[0]
-        if not isinstance(bounds, tuple) or bounds[0] > bounds[1]:
+        if False#not isinstance(bounds, tuple) or bounds[0] > bounds[1]:
             raise ValueError("Unable to find a compatible one-dimensional solver with provided `unknowns`.\n"
                              " Please provide valid lower/upper bounds, e.g. unknowns = {`a`: (0, 1)}")
         else:
             return "brentq"
     elif len(unknowns) > 1:
         init_values = list(unknowns.values())
-        if not np.all([isinstance(v, Real) for v in init_values]):
+        if False#not np.all([isinstance(v, Real) for v in init_values]):
             raise ValueError("Unable to find a compatible multi-dimensional solver with provided `unknowns`.\n"
                              " Please provide valid initial values, e.g. unknowns = {`a`: 1, `b`: 2}")
         else:

@@ -1,5 +1,5 @@
 from typing import List, Optional
-import numpy as np
+import cupy as np
 import copy
 
 # from sequence_jacobian.blocks.support.het_support import DiscreteChoice

@@ -1,6 +1,6 @@
 """Displacement handler classes used by SimpleBlock for .ss, .td, and .jac evaluation to have Dynare-like syntax"""
 
-import numpy as np
+import cupy as np
 import numbers
 from warnings import warn
 

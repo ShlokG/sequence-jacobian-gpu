@@ -1,5 +1,5 @@
 import copy
-import numpy as np
+import cupy as np
 from typing import Optional, Dict
 
 from .block import Block

@@ -1,6 +1,6 @@
 """Test all models' Jacobian calculations"""
 
-import numpy as np
+import cupy as np
 
 def test_ks_jac(krusell_smith_dag):
     _, ss, ks_model, unknowns, targets, exogenous = krusell_smith_dag

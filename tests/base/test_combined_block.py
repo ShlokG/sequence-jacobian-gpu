@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 import sequence_jacobian as sj
 
 

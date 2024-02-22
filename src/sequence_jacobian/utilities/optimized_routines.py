@@ -1,6 +1,6 @@
 """Njitted routines to speed up some steps in backward iteration or aggregation"""
 
-import numpy as np
+import cupy as np
 from numba import njit
 
 

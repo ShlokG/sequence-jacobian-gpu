@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 from sequence_jacobian import simple, solved
 from sequence_jacobian.classes.steady_state_dict import SteadyStateDict
 from sequence_jacobian.classes.jacobian_dict import FactoredJacobianDict

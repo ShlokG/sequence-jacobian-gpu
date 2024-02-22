@@ -1,6 +1,6 @@
 """Grids and Markov chains"""
 
-import numpy as np
+import cupy as np
 from scipy.stats import norm
 
 

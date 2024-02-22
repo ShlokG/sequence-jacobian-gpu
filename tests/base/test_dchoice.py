@@ -8,7 +8,7 @@ SIM model with labor force participation choice
     - e is labor productivity
     - a is assets
 '''
-import numpy as np
+import cupy as np
 from numba import njit
 
 from sequence_jacobian.blocks.stage_block import StageBlock

@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 import pytest
 from sequence_jacobian.examples import krusell_smith
 

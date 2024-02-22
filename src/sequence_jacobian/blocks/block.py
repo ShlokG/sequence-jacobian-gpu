@@ -1,6 +1,6 @@
 """Primitives to provide clarity and structure on blocks/models work"""
 
-import numpy as np
+import cupy as np
 from numbers import Real
 from typing import Any, Dict, Union, Tuple, Optional, List
 from copy import deepcopy

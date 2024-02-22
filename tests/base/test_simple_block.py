@@ -1,7 +1,7 @@
 """Test SimpleBlock functionality"""
 import copy
 
-import numpy as np
+import cupy as np
 import pytest
 
 from sequence_jacobian import simple

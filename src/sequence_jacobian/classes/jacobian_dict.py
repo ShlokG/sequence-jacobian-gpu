@@ -1,6 +1,6 @@
 import copy
 import warnings
-import numpy as np
+import cupy as np
 
 from ..utilities.misc import factor, factored_solve
 from ..utilities.ordered_set import OrderedSet

@@ -1,6 +1,6 @@
 """Test all models' steady state computations"""
 
-import numpy as np
+import cupy as np
 
 from sequence_jacobian.examples import rbc, krusell_smith, hank, two_asset
 

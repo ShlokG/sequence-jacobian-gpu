@@ -1,6 +1,6 @@
 """ImpulseDict class for manipulating impulse responses."""
 
-import numpy as np
+import cupy as np
 
 from .result_dict import ResultDict
 

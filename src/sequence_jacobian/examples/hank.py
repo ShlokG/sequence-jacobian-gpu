@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 
 from sequence_jacobian import grids, simple, create_model, hetblocks
 hh = hetblocks.hh_labor.hh

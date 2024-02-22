@@ -1,5 +1,5 @@
 from sequence_jacobian.utilities.multidim import outer
-import numpy as np
+import cupy as np
 
 def test_2d():
     a = np.random.rand(10)

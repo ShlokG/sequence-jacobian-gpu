@@ -1,7 +1,7 @@
 """Tests for steady_state with worse initial guesses, making use of the constrained solution functionality"""
 
 import pytest
-import numpy as np
+import cupy as np
 
 
 # Filter out warnings when the solver is trying to search in bad regions

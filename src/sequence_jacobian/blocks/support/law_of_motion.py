@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 from . import het_compiled
 from ...utilities.interpolate import interpolate_coord_robust, interpolate_coord
 from ...utilities.multidim import batch_multiply_ith_dimension, multiply_ith_dimension

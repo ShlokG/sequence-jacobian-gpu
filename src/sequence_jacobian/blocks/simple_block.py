@@ -1,6 +1,6 @@
 """Class definition of a simple block"""
 
-import numpy as np
+import cupy as np
 from copy import deepcopy
 
 from .support.simple_displacement import ignore, Displace, AccumulatedDerivative

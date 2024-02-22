@@ -1,6 +1,6 @@
 """Assorted other utilities"""
 
-import numpy as np
+import cupy as np
 import scipy.linalg
 from numba import njit, guvectorize
 

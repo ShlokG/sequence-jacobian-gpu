@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 from . import het_compiled
 from ...utilities.discretize import stationary as general_stationary
 from ...utilities.interpolate import interpolate_coord_robust, interpolate_coord

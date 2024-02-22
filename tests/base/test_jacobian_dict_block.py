@@ -1,6 +1,6 @@
 """Test JacobianDictBlock functionality"""
 
-import numpy as np
+import cupy as np
 
 from sequence_jacobian import combine
 from sequence_jacobian.examples import rbc

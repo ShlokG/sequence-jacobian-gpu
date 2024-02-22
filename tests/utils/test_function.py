@@ -1,7 +1,7 @@
 from sequence_jacobian.utilities.ordered_set import OrderedSet
 from sequence_jacobian.utilities.function import (DifferentiableExtendedFunction, ExtendedFunction, 
                         CombinedExtendedFunction, metadata)
-import numpy as np
+import cupy as np
 
 def f1(a, b, c):
     k = a + 1

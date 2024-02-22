@@ -1,6 +1,6 @@
 """Test all models' non-linear transitional dynamics computations"""
 
-import numpy as np
+import cupy as np
 
 from sequence_jacobian import combine
 from sequence_jacobian.examples import two_asset

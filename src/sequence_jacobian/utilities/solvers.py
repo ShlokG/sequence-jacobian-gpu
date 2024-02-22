@@ -1,6 +1,6 @@
 """Simple nonlinear solvers"""
 
-import numpy as np
+import cupy as np
 import warnings
 
 

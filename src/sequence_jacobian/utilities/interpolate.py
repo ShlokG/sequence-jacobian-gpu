@@ -20,7 +20,7 @@
     done on the final dimension.
 """
 
-import numpy as np
+import cupy as np
 from numba import njit, guvectorize
 
 

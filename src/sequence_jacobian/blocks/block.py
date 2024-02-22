@@ -169,6 +169,7 @@ class Block:
                                 inputs: Union[Dict[str, Array], ImpulseDict], outputs: Optional[List[str]] = None,
                                 internals: Union[Dict[str, List[str]], List[str]] = {}, Js: Dict[str, JacobianDict] = {}, 
                                 options: Dict[str, dict] = {}, H_U_factored: Optional[FactoredJacobianDict] = None,
+                                U_initial: Optional[ImpulseDict] = None,
                                 ss_initial: Optional[SteadyStateDict] = None, **kwargs) -> ImpulseDict:
         """Calculate a general equilibrium, non-linear impulse response to a set of shocks in `inputs` 
            around a steady state `ss`, given a set of `unknowns` and `targets` corresponding to the endogenous
@@ -190,7 +191,10 @@ class Block:
         options = self.get_options(options, kwargs, 'solve_impulse_nonlinear')
 
         # Newton's method
-        U = ImpulseDict({k: np.zeros(T) for k in unknowns})
+        if U_initial is not None:
+            U = U_initial
+        else:
+            U = ImpulseDict({k: np.zeros(T) for k in unknowns})
         if options['verbose']:
             print(f'Solving {self.name} for {unknowns} to hit {targets}')
         for it in range(options['maxit']):
@@ -207,7 +211,7 @@ class Block:
         else:
             raise ValueError(f'No convergence after {options["maxit"]} backward iterations!')
 
-        return (inputs | U)[inputs_as_outputs] | results
+        return (inputs | U)[inputs_as_outputs] | results, U
 
     solve_impulse_linear_options = {}
 
